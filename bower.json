@@ -1,0 +1,19 @@
+{
+  "name": "ftc-9773_site",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ftc-9773/ftc-9773_site",
+  "authors": [
+    "pranav.burugula <pranav.burugula@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  }
+}
