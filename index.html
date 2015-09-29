@@ -1,15 +1,56 @@
 <html>
-	<head>
-		<title>Welcome to FTC team 9773!</title>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link href="css/main.css" rel="stylesheet" type="text/css">
-		<link href="bower_components/polymer/polymer-micro.html" rel="import">
-		
-		<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-	</head>
-	<body unresolved>
-		<div id="header">
-			
-		</div>
-	</body>
+
+<head>
+	<title>Welcome to FTC team 9773!</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="bower_components/polymer/polymer-micro.html" rel="import">
+	<link href="bower_components/paper-drawer-panel/paper-drawer-panel.html" rel="import">
+	<link href="bower_components/paper-header-panel/paper-header-panel.html" rel="import">
+
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+	<style is="custom-style">
+		paper-header-panel {
+			float: left;
+			width: 240px;
+			height: 240px;
+			margin: 12px;
+			@apply(--shadow-elevation-2dp);
+		}
+		.paper-header {
+			height: 60px;
+			font-size: 16px;
+			line-height: 60px;
+			padding: 0 10px;
+			color: white;
+			transition: height 0.2s;
+		}
+		.header .paper-header {
+			background-color: transparent;
+		}
+	</style>
+</head>
+
+<body unresolved>
+	<paper-drawer-panel>
+		<paper-header-panel drawer>
+			<paper-toolbar>
+				<div>Application</div>
+			</paper-toolbar>
+			<div>Drawer content...</div>
+		</paper-header-panel>
+		<paper-header-panel mode="waterfall" class="header" main>
+			<paper-toolbar>
+				<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+				<div>
+					Title
+				</div>
+			</paper-toolbar>
+			<div>
+				Main content
+			</div>
+		</paper-header-panel>
+	</paper-drawer-panel>
+</body>
+
 </html>
