@@ -14,7 +14,6 @@
 			float: left;
 			width: 240px;
 			height: 240px;
-			margin: 12px;
 			@apply(--shadow-elevation-2dp);
 		}
 		.paper-header {
@@ -28,26 +27,31 @@
 		.header .paper-header {
 			background-color: transparent;
 		}
+		.carousel{
+			
+		}
 	</style>
 </head>
 
 <body unresolved>
 	<paper-drawer-panel>
 		<paper-header-panel drawer>
-			<paper-toolbar>
-				<div>Application</div>
+			<paper-toolbar style="background-color: #CDDC39; color: white;">
+				<div><h3>FTC Team 9773</h3></div>
 			</paper-toolbar>
 			<div>Drawer content...</div>
 		</paper-header-panel>
 		<paper-header-panel mode="waterfall" class="header" main>
-			<paper-toolbar>
+			<paper-toolbar style="background-color: #FF5722; color: white;">
 				<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
 				<div>
-					Title
+					<h3>Home</h3>
 				</div>
 			</paper-toolbar>
-			<div>
-				Main content
+			<div class="main_content">
+				<div class="carousel">
+					
+				</div>
 			</div>
 		</paper-header-panel>
 	</paper-drawer-panel>
