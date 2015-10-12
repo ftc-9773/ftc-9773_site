@@ -1,70 +1,81 @@
 <html>
 
-<head>
-	<title>Welcome to FTC team 9773!</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href="css/main.css" rel="stylesheet" type="text/css">
-	<link href="bower_components/polymer/polymer-micro.html" rel="import">
-	<link href="bower_components/paper-drawer-panel/paper-drawer-panel.html" rel="import">
-	<link href="bower_components/paper-header-panel/paper-header-panel.html" rel="import">
-	<link href="bower_components/paper-ripple/paper-ripple.html" rel="import">
-	<link href="bower_components/paper-item/paper-item-body.html" rel="import" />
-	<link href="bower_components/paper-item/paper-item.html" rel="import" />
+	<head>
+		<title>Welcome to FTC team 9773!</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="bower_components/polymer/polymer-micro.html" rel="import">
+		<link href="bower_components/paper-drawer-panel/paper-drawer-panel.html" rel="import">
+		<link href="bower_components/paper-header-panel/paper-header-panel.html" rel="import">
+		<link href="bower_components/paper-ripple/paper-ripple.html" rel="import">
+		<link href="bower_components/paper-item/paper-item-body.html" rel="import" />
+		<link href="bower_components/paper-item/paper-item.html" rel="import" />
 
-	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-	<style is="custom-style">
-		paper-header-panel {
-			float: left;
-			width: 240px;
-			height: 240px;
-			@apply(--shadow-elevation-2dp);
-		}
-		.paper-header {
-			height: 60px;
-			font-size: 16px;
-			line-height: 60px;
-			padding: 0 10px;
-			color: white;
-			transition: height 0.2s;
-		}
-		.header .paper-header {
-			background-color: transparent;
-		}
-		.carousel{
-			
-		}
-	</style>
-</head>
+		<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+		<style is="custom-style">
+			paper-header-panel {
+				float: left;
+				width: 240px;
+				height: 240px;@apply(--shadow-elevation-2dp);
+			}
+			.paper-header {
+				height: 60px;
+				font-size: 16px;
+				line-height: 60px;
+				padding: 0 10px;
+				color: white;
+				transition: height 0.2s;
+			}
+			.header .paper-header {
+				background-color: transparent;
+			}
+			.carousel {
 
-<body unresolved>
-	<paper-drawer-panel>
-		<paper-header-panel drawer>
-			<paper-toolbar style="background-color: #CDDC39; color: white;">
-				<div><h3>FTC Team 9773</h3></div>
-			</paper-toolbar>
-			<paper-item>
-				About Us
-				<paper-ripple></paper-ripple>
-			</paper-item>
-			<paper-item>
-				Blog
-				<paper-ripple></paper-ripple>
-			</paper-item>
-		</paper-header-panel>
-		<paper-header-panel mode="waterfall" class="header" main>
-			<paper-toolbar style="background-color: #FF5722; color: white;">
-				<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
-				<div>
-					<h3>Home</h3>
+			}
+			.item {
+				position: relative;
+				height: 48px;
+				line-height: 48px;
+				color: #646464;
+				font-size: 0.9em;
+			}
+			.label {
+				padding: 0 16px;
+			}
+		</style>
+	</head>
+
+	<body unresolved>
+		<paper-drawer-panel>
+			<paper-header-panel drawer>
+				<paper-toolbar style="background-color: #CDDC39; color: white;">
+					<div>
+						<h3>FTC Team 9773</h3>
+					</div>
+				</paper-toolbar>
+				<div class="item">
+					<div class="label">About Us</div>
+					<paper-ripple></paper-ripple>
 				</div>
-			</paper-toolbar>
-			<div class="main_content">
-				<div class="carousel">
-					
+				<div class="item">
+					<div class="label">Blog</div>
+					<paper-ripple></paper-ripple>
 				</div>
-			</div>
-		</paper-header-panel>
-	</paper-drawer-panel>
-</body>
+			</paper-header-panel>
+			<paper-header-panel mode="waterfall" class="header" main>
+				<paper-toolbar style="background-color: #FF5722; color: white;">
+					<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+					<div>
+						<h3>Home</h3>
+					</div>
+				</paper-toolbar>
+				<div class="main_content">
+					<div class="carousel">
+
+					</div>
+				</div>
+			</paper-header-panel>
+		</paper-drawer-panel>
+	</body>
 
 </html>
