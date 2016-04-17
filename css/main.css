@@ -1,0 +1,41 @@
+body {@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+	font-family: 'Open Sans', sans-serif;
+}
+a:active, a:link, a:hover, a:visited, a {
+	color: #000000;
+	text-decoration: none;
+}
+.navbar {
+	width: 100%;
+	height: 50px;
+	background-color: #F9FF21;
+	text-align: center;
+}
+.navcontainer {
+	height: 100%;
+	white-space: nowrap;
+	text-align: center;
+}
+.navelement {
+	width: 100px;
+	height: 50px;
+	font-size: 18pt;
+	display: inline-block;
+	white-space: normal;
+}
+.navcontent{
+	margin-top: 12.5px;
+}
+/*.navcontainer:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	/* adjust for white space between pseudo element and next sibling */
+	/*margin-right: -.25em;*/
+	/* stretch line height */
+	/*height: 100%;
+}*/
+.navelement:hover {
+	background-color: #e4e519;
+}
