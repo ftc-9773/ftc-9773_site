@@ -1,5 +1,6 @@
 body {@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 	font-family: 'Open Sans', sans-serif;
+	color: #000000;
 }
 a:active, a:link, a:hover, a:visited, a {
 	color: #000000;
@@ -13,29 +14,15 @@ a:active, a:link, a:hover, a:visited, a {
 }
 .navcontainer {
 	height: 100%;
-	white-space: nowrap;
 	text-align: center;
 }
 .navelement {
 	width: 100px;
 	height: 50px;
 	font-size: 18pt;
-	display: inline-block;
-	white-space: normal;
 }
 .navcontent {
-	margin-top: 12.5px;
-}
-.navcontainer:before {
-	content: "";
-	display: inline-block;
-	vertical-align: middle;
-	width: 0;
-	/* adjust for white space between pseudo element and next sibling */
-	margin-right: -.25em;
-	*/
-	/* stretch line height */
-	height: 100%;
+	margin-top: 8px;
 }
 .navelement:hover {
 	background-color: #e4e519;
