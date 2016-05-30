@@ -23,19 +23,20 @@ a:active, a:link, a:hover, a:visited, a {
 	display: inline-block;
 	white-space: normal;
 }
-.navcontent{
+.navcontent {
 	margin-top: 12.5px;
 }
-/*.navcontainer:before {
+.navcontainer:before {
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
 	width: 0;
 	/* adjust for white space between pseudo element and next sibling */
-	/*margin-right: -.25em;*/
+	margin-right: -.25em;
+	*/
 	/* stretch line height */
-	/*height: 100%;
-}*/
+	height: 100%;
+}
 .navelement:hover {
 	background-color: #e4e519;
 }
